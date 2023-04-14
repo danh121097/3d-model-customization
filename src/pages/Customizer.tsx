@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import state from '@store';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useSnapshot } from 'valtio';
@@ -39,10 +39,6 @@ const Customizer = () => {
     }
   };
 
-  useEffect(() => {
-    console.log('file', file);
-  }, [file]);
-
   const handleDecals = (type: IReadFileType, result: string) => {
     const decalType = DecalTypes[type];
 
@@ -55,8 +51,6 @@ const Customizer = () => {
   };
 
   const handleActiveFilterTab = (tabName: string) => {
-    console.log('tabName');
-
     switch (tabName) {
       case 'logo-tshirt':
         state.isLogoTexture = !activeFilterTab[tabName];
