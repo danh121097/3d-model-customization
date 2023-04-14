@@ -11,11 +11,11 @@
 }
 
 .home-content {
-  @apply flex-1 xl:justify-center justify-start flex flex-col gap-10;
+  @apply flex-1 xl:justify-center justify-start flex flex-col gap-4 lg:gap-10;
 }
 
 .head-text {
-  @apply xl:text-[10rem] text-[6rem] xl:leading-[11rem] leading-[7rem] font-black text-black;
+  @apply xl:text-[10rem] text-[3rem] lg:text-[6rem] xl:leading-[11rem] lg:leading-[7rem] font-black text-black;
 }
 
 .download-btn {

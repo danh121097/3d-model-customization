@@ -4,27 +4,23 @@ export const assets = (name: string) => {
 
 export const EditorTabs = [
   {
-    name: 'colorpicker',
+    name: 'color-picker',
     icon: assets('swatch')
   },
   {
-    name: 'filepicker',
-    icon: assets('fileIcon')
-  },
-  {
-    name: 'aipicker',
-    icon: assets('ai')
+    name: 'file-picker',
+    icon: assets('file')
   }
 ];
 
 export const FilterTabs = [
   {
-    name: 'logoShirt',
-    icon: assets('logoShirt')
+    name: 'logo-tshirt',
+    icon: assets('logo-tshirt')
   },
   {
-    name: 'stylishShirt',
-    icon: assets('stylishShirt')
+    name: 'stylish-tshirt',
+    icon: assets('stylish-tshirt')
   }
 ];
 

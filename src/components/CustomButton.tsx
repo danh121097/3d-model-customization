@@ -1,19 +1,20 @@
+import React from 'react';
 import state from '@store';
 import { useSnapshot } from 'valtio';
 import { getContrastingColor } from '@helpers';
 
-interface CustomButtonProps {
+type CustomButtonProps = {
   type: 'filled' | 'outline';
   title: string;
   customStyles?: string;
   handleClick: () => void;
-}
+};
 
 const CustomButton = (props: CustomButtonProps) => {
   const { type, title, customStyles, handleClick } = props;
   const snap = useSnapshot(state);
 
-  const generateStyle = (type) => {
+  const generateStyle = (type: string) => {
     if (type === 'filled') {
       return {
         backgroundColor: snap.color,

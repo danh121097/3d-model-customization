@@ -4,3 +4,5 @@ export declare interface IAPIResponseError {
   status: string;
   code: number;
 }
+
+export type IReadFileType = 'logo' | 'full';
