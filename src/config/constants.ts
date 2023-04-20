@@ -10,6 +10,10 @@ export const EditorTabs = [
   {
     name: 'file-picker',
     icon: assets('file')
+  },
+  {
+    name: 'download',
+    icon: assets('download')
   }
 ];
 

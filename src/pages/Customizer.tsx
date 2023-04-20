@@ -1,5 +1,4 @@
 import { useRef, useState } from 'react';
-import state from '@store';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 import {
@@ -13,6 +12,8 @@ import { ColorPicker, CustomButton, Tab, FileUpload } from '@components';
 import { useOnClickOutside } from '@composables';
 import { reader } from '@helpers';
 import { IReadFileType } from '@types';
+import { downloadCanvasToImage } from '@helpers';
+import state from '@store';
 
 const Customizer = () => {
   const tabs = useRef(null);
@@ -34,8 +35,8 @@ const Customizer = () => {
         return <ColorPicker />;
       case 'file-picker':
         return <FileUpload file={file} setFile={setFile} readFile={readFile} />;
-      default:
-        return null;
+      case 'download':
+        downloadCanvasToImage();
     }
   };
 
