@@ -45,9 +45,7 @@ const Customizer = () => {
     if (decalType.stateProperty === 'logoDecal') state.logoDecal = result;
     else state.fullDecal = result;
 
-    if (!activeFilterTab[decalType.filterTab]) {
-      handleActiveFilterTab(decalType.filterTab);
-    }
+    handleActiveFilterTab(decalType.filterTab);
   };
 
   const handleActiveFilterTab = (tabName: string) => {

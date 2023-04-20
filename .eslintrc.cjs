@@ -27,6 +27,8 @@ module.exports = {
         "unused-imports/no-unused-imports": "warn",
         'unused-imports/no-unused-imports-ts': "warn",
         "no-unused-vars": "off",
-        "react/no-unescaped-entities": "off"
+        "react/no-unescaped-entities": "off",
+        "react/no-unknown-property": "off",
+        "@typescript-eslint/no-explicit-any": "off"
     }
 }

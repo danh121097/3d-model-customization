@@ -18,7 +18,7 @@ const Home = () => {
         <motion.section className='home' {...slideAnimation('left')}>
           <motion.header {...slideAnimation('down')}>
             <img
-              src='imgs/threejs.png'
+              src='imgs/logo.png'
               alt='logo'
               className='w-8 h-8 object-contain cursor-pointer'
             />

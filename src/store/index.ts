@@ -14,8 +14,8 @@ const state = proxy<IProxy>({
   color: '#EFBD48',
   isLogoTexture: true,
   isFullTexture: false,
-  logoDecal: 'imgs/threejs.png',
-  fullDecal: 'imgs/threejs.png'
+  logoDecal: 'imgs/logo.png',
+  fullDecal: 'imgs/logo.png'
 });
 
 export default state;

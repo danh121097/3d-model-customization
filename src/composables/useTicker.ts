@@ -17,7 +17,7 @@ export const useTicker = (mode: 's' | 'm' = 's'): UseTickerResult => {
       mode === 's' ? 1000 : 60000
     );
     return () => clearInterval(secInterval);
-  }, [mode === 's' ? 1000 : 60000]);
+  }, [mode]);
 
   const stopTicker = () => {
     clearInterval(secInterval);
