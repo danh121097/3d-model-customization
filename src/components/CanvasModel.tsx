@@ -8,7 +8,7 @@ const CanvasModel = () => {
       shadows
       camera={{
         position: [0, 0, 0],
-        fov: 30,
+        fov: 60,
         near: 0.003,
         far: 1000
       }}

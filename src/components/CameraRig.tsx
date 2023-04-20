@@ -40,7 +40,7 @@ const CameraRig = ({ children }: CameraRigProps) => {
     group.current &&
       easing.dampE(
         group.current.rotation as Euler,
-        [state.pointer.y / 4, -state.pointer.x / 2, 0],
+        [-state.pointer.y / 4, state.pointer.x / 2, 0],
         0.25,
         delta
       );
